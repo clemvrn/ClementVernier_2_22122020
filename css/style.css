@@ -1,5 +1,3 @@
-/* Eléments principaux de la page */
-
 /*Iphone8 NULL*/
 #aside-iphone8 {
     display: none;
@@ -13,13 +11,16 @@
 #br-iphone8 {
     display: none;
 }
+#br-iphone8-2 {
+    display: none;
+}
 #map-iphone8 {
     display: none;
 }
-#search-iphone8 {
+#map-tablette {
     display: none;
 }
-#aside-iphone8 {
+#search-iphone8 {
     display: none;
 }
 #ul-filtre-iphone8 {
@@ -36,6 +37,30 @@
 }
 #etoiles-iphone8-3 {
     display: none !important;
+}
+#article-activite-2-tablette {
+    display: none !important;
+}
+#article-activite-3-tablette {
+    display: none !important;
+}
+#article-activite-5-tablette {
+    display: none !important;
+}
+#article-activite-6-tablette {
+    display: none !important;
+}
+#aside-icon-tablette {
+    display: none !important;
+}
+#etoiles-tablette {
+    display: none;
+}
+#etoiles-tablette-2 {
+    display: none;
+}
+#etoiles-tablette-3 {
+    display: none;
 }
 
 body, h1, h2
@@ -130,7 +155,7 @@ nav a:hover
     text-align: justify;
 }
 
-#recherche h1
+#recherche h2
 {
     font-weight:800;
     font-size: 1.1em;
@@ -616,3 +641,4 @@ footer h2
 {
     width: 33%;
 }
+

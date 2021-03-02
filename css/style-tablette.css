@@ -1,53 +1,59 @@
-/*Desktop NULL*/
-#aside-desktop {
+/*Iphone8 et Desktop NULL*/
+#nav-iphone8 {
     display: none;
 }
-#nav-desktop {
+#menu2 {
+    display: none;
+}
+#br-iphone8 {
+    display: none;
+}
+#br-iphone8-2 {
     display: none;
 }
 #map-desktop {
     display: none;
 }
-#map-tablette {
+#map-iphone8 {
     display: none;
 }
-#search-desktop {
+#search-iphone8 {
+    display: none;
+}
+#aside-desktop {
     display: none;
 }
 #ul-filtre-desktop {
     display: none !important;
 }
 #aside-icon-desktop {
-    display: none;
+    display: none !important;
+}
+#aside-icon-iphone8 {
+    display: none !important;
 }
 #etoiles-desktop {
-    display: none;
+    display: none !important;
+}
+#etoiles-iphone8 {
+    display: none !important;
+}
+#etoiles-iphone8-2 {
+    display: none !important;
+}
+#etoiles-iphone8-3 {
+    display: none !important;
 }
 #etoiles-desktop2 {
-    display: none;
+    display: none !important;
 }
 #etoiles-desktop3 {
-    display: none;
-}
-#etoiles-tablette {
-    display: none;
-}
-#etoiles-tablette-2 {
-    display: none;
-}
-#etoiles-tablette-3 {
-    display: none;
-}
-#article-activite-2-tablette {
     display: none !important;
 }
-#article-activite-3-tablette {
+#articles-col-1 {
     display: none !important;
 }
-#article-activite-5-tablette {
-    display: none !important;
-}
-#article-activite-6-tablette {
+#articles-col-2 {
     display: none !important;
 }
 
@@ -69,7 +75,7 @@ article
 
 #bloc_page
 {
-    width: 340px;
+    width: 725px;
     margin: auto;
 }
 
@@ -78,149 +84,111 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 #logo
 {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
 }
 
 #logo img
 {
-    width: 115px;
-    height: 50px;
+    width: 160px;
+    height: 160px;
 }
 
-.sign-up-iphone8 {
-    padding-top: 15px;
-    font-size: 1em;
+/* Navigation */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-top:30px;
+}
+
+/* nav li sauf dernier à droite */
+.leftli {
+    margin-right: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.2em;
+    color: black;
+    padding-top: 80px;
     text-decoration: none;
-    color: #0065FC;
-    font-weight: 800;
+    font-weight:500;
 }
 
 nav a span
 {
     color: #0065FC;
     font-weight: bold;
+    padding-right: 0px !important;
 }
 
-nav a
-{
-    text-decoration: none;
-}
-
-.ul-iphone8
-{
-    list-style-type: none;
-    display: flex;
-    padding-left: 0px;
-}
-
-/* Navigation */
-#menu2 {
-    justify-content: center;
-    margin-bottom: 40px;
-    margin-top: 0px;
-}
-
-#nav2-iphone8 ul {
-    padding-left:0px;
-    margin-bottom: 0px;
-    justify-content: center;
-}
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.a-hebergements {
-    font-size: 1em;
-    color: black;
-    padding-bottom: 15px;
-    padding-left: 37.6px;
-    padding-right: 37.6px;
-    text-decoration: none;
-    font-weight:500;
-    border-bottom: 3px solid#F2F2F2;
-}
-.a-activités {
-    font-size: 1em;
-    color: black;
-    padding-bottom: 15px;
-    padding-left: 62.15px;
-    padding-right: 62.05px;
-    text-decoration: none;
-    font-weight:500;
-    border-bottom: 3px solid #F2F2F2;
-}
-#menu2 nav a:hover
+nav a:hover
 {
     color: #0065FC;
-    border-bottom: 3px solid #0065FC;
+    border-top: 5px solid #0065FC;
 }
-
 
 /* Recherche */
 #recherche
 {
     display: flex;
-    margin-bottom: 20px;
-    text-align:left;
+    margin-bottom: 25px;
+    text-align: justify;
 }
 
 #recherche h2
 {
     font-weight:800;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-    margin-top:0px;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 #recherche p
 {
     font-weight:500;
-    font-size: 0.95em;
-    margin-bottom: 20px;
+    font-size: 1.4em;
     margin-top:0px;
+    margin-bottom:10px;
 }
 
 #recherche form {
     display: flex;
-    justify-content: center;
     border: solid 1px #F2F2F2;
-    border-radius: 15px;
-    max-width: 325px;
-    margin-top: 30px;
+    border-radius: 25px;
+    justify-content: space-between;
+    max-width:500px;
+    margin-top: 20px;
 }
 
 #recherche .fa-map-marker-alt {
     background-color: #F2F2F2;
     color: black;
-    padding: 18px 18px 18px 18px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius: 25px;
 }
 
 #recherche .input-field {
-    padding: 10px 10px 10px 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     border: none;
-    min-width: 150px;
-    font-weight: bold;
-    color: black;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-size: 1.2em !important;
-}
-
-input::placeholder {
-    font-weight: bold;
+    width: 263px;
+    font-weight:700;
+    font-size: 1.2em;
     color: black;
     font-family: 'Raleway', Arial, sans-serif;
 }
@@ -228,22 +196,20 @@ input::placeholder {
 #recherche .search {
     border: none;
     background-color: #0065FC;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-#recherche .fa-search {
     color: white;
-    padding: 18px 10px 18px 10px;
-
+    font-weight:500;
+    font-size: 1.2em;
+    padding: 20px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 /* FILTRE */
 #filtre
 {
     display: flex;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -252,9 +218,9 @@ input::placeholder {
 }
 
 #filtre .filter {
-    font-weight: 800;
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-weight:800;
+    font-size: 1.5em;
+    margin: 0px;
     margin-bottom: 5px;
 
 }
@@ -264,13 +230,14 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px;
+    margin-top:10px;
 }
 
 #filtre .fas {
     color: #0065FC;
     position: relative; 
-    right: 10px;
-    padding: 16px 14px;
+    right: 8px;
+    padding: 20px 20px;
     background-color: #DEEBFF;
     border-radius: 50%;
     margin-right: 0px;
@@ -278,12 +245,17 @@ input::placeholder {
 
 /* Pour le logo plus petit */
 #filtre .fa-child {
-    padding: 16px 16.5px;
+    padding: 20px 23px;
 }
 
 /* Pour le logo plus grand */
 #filtre .fa-money-bill-wave {
-    padding: 16px 11.5px;
+    padding: 20px 17px;
+}
+
+/* Pour le logo chien */
+#filtre .fa-dog {
+    padding: 20px 18.5px;
 }
 
 #filtre .fas:hover {
@@ -293,17 +265,19 @@ input::placeholder {
 
 #filtre li
 {
-    border: solid 2px lightgrey;
-    margin-bottom: 15px;
-    padding-right: 18px;
+    border: solid 3px lightgrey;
+    margin-right: 23.9px;
+    padding-right: 15px;
     border-radius: 50px;
-    font-size: 1em;
-    font-weight: 800;
+    font-size: 0.85em;
+    font-weight:800;
     list-style: none;
+    margin-bottom: 10px;
 }
-.money {
-    margin-right: 20px;
+.dog {
+    margin-right: 0px !important;
 }
+
 #filtre li:hover {
     background-color:  #DEEBFF;
 }
@@ -316,38 +290,40 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #info p
-{   
-    margin-top: 3.5px;
+{
     font-weight:500;
-    font-size: 0.95em;
+    font-size: 1.2em;
 }
 
 #info .fa-info {
     color: #0065FC;
-    font-size: 0.7em;
+    font-size: 1.1em;
     background-color: white;
     border: solid 1px lightgrey;
-    border-radius: 30px;
+    border-radius: 25px;
     margin-right: 10px;
-    padding: 6px 10px;
+    padding: 10px 16px;
 }
 
 /* Herbergements à Marseille */
 #HbMarseille {
+    background-color: #F2F2F2;
     border-radius: 15px;
+    padding: 10px;
     flex:3;
     font-size: 0.9em;
-    margin-top: 580px;
+    margin-top:30px;
 }
 
 #HbMarseille h2 {
-    font-weight: 800;
-    font-size: 1.4em;
-    margin-left: 0px;
+    font-weight:800;
+    font-size: 1.8em;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 #HbMarseille h3 {
@@ -374,10 +350,9 @@ input::placeholder {
 
 .seeMore {
     font-weight:800;
-    font-size: 1.2em;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 5px;
+    font-size: 1.4em;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .prix-bold {
@@ -385,11 +360,11 @@ input::placeholder {
 }
 
 #HbMarseille article {
-    margin-left: 0px;
+    margin-left: 15px;
     margin-top: 10px;
-    margin-bottom: 5px;
-    margin-right: 0px;
-    min-width: 218px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    min-width: 270px;
     max-width: 650px;
     padding: 5px;
     border-radius: 20px;
@@ -399,27 +374,26 @@ input::placeholder {
 
 #HbMarseille img {
     width: 100%;
-    max-height: 115px;
+    max-height: 175px;
     min-width: 50px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    object-fit: cover; /* Affichage img */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #articles {
     display: flex;
     margin:0px auto;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 25px;
 }
 
 #HbMarseille .etoiles {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 0.8em;
+margin-left: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
 }
 
 .etoiles-bleu {
@@ -440,29 +414,27 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 
 }
-.fa-chart-line:before {
-    font-size: 1.2em;
-}
+
 #aside-iphone8
 {   
     display: block;
     background-color: #F2F2F2;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    margin-top:30px;
+    padding:10px;
+    padding-bottom: 55px;
+    margin-bottom: 30px;
     color: black;
     font-size: 0.9em;
-    width: 100%;
-    left:0;
-    position:absolute;
 }
 
 #aside-iphone8 h2 {
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.8em;
+    margin-top: 20px;
 }
 
 #articles-aside-2 {
@@ -472,13 +444,13 @@ input::placeholder {
 }
 
 #articles-aside-2 img {
-    flex: 0 0 40%;
-    min-height: 130px;
-    max-height: 130px;
-    min-width: 80px;
+    flex: 0 0 50%;
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 135px;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #articles-aside-2 article {
@@ -488,7 +460,7 @@ input::placeholder {
     border-radius: 20px;
     margin-left: 15px;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-right: 15px;
 }
 
@@ -499,58 +471,51 @@ input::placeholder {
 }
 
 .article-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
-    padding-left:10px;
-    margin-left:10px;
-    margin-top: 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 5px;
+padding-left:10px;
+margin-left:20px;
+margin-top: 10px;
 }
 
 .article-aside h3 {
-    font-weight: 700;
-    font-size: 1.1em;
-    margin-top: 5px;
+    font-weight: 800;
+    font-size: 1.4em;
+    margin-top: 10px;
     color: black;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 35px;
     margin-bottom: 5px;
 }
 
 .article-aside p {
     font-weight:500;
-    font-size: 1em;
-    margin-left: 0px;
-    margin-top: 0px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 5px;
     color: black;
 }
 
 .article-aside .etoiles {
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 5px;
-    margin-bottom: 5px;
-    font-size:0.7em;
+    margin-bottom: 10px;
 }
-#aside-icon-tablette {
-    display: none !important;
-}
-
 
 /* Activités Marseille */
 #ActiviteMarseille h2 {
     font-weight: 800;
-    font-size: 1.4em;
-    margin-left: 0px;
-    margin-bottom: 10px;
+    font-size: 1.6em;
+    margin-top: 20px;
 }
 
 #ActiviteMarseille {
-    margin-top: 15px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0px;
 }
 
 #ActiviteMarseille img {
@@ -558,15 +523,15 @@ input::placeholder {
     max-height: 100px;
     max-width: 360px;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #activites-articles {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 45px !important;
 }
@@ -586,109 +551,107 @@ input::placeholder {
 }
 
 #activites-articles img {
-    min-width: 340px;
+    min-width: 345px;
 }
 
 #activites-articles article {
-    min-width: 340px;
-    max-width: 340px;
-    max-height: 392px;
-    border-radius: 15px;
+    min-width: 345px;
+    max-width: 345px;
+    min-height: 250px;
+    max-height: 250px;
+    border-radius: 35px;
     box-shadow: 5px 5px 10px 3px lightgrey;
+    margin-bottom:15px;
 } 
 
 .img-size-h {
-    min-height: 130px;
+    min-height: 200px;
 }
 
 .img-size-m {
-    min-height: 130px;
+    min-height: 200px;
 }
 
 .img-size-s {
-    min-height: 130px;
+    min-height: 200px;
 }
 
 .img-size-half {
-    min-height: 130px;
+    min-height: 200px;
 }
 
 .article-activite-1 {
     margin-top: 20px;
     margin-bottom: 30px;
     max-height: 410px !important;
-    min-height: 193px !important;
 }
 
 .article-activite-2 {
+    margin-top: 20px;
     margin-bottom: 30px;
     max-height: 410px !important;
-    min-height: 193px !important;
 }
 
 .article-activite-3 {
+    margin-top: 20px;
     margin-bottom: 30px;
     max-height: 410px !important;
-    min-height: 193px !important;
 }
 
 .article-activite-4 {
+    margin-top: 20px;
     margin-bottom: 30px;
-    min-height: 193px !important;
+    max-height: 410px !important;
 }
 
 .article-activite-5 {
+    margin-top: 20px;
     margin-bottom: 30px;
     max-height: 410px !important;
-    min-height: 193px !important;
 }
 
 .article-activite-6 {
+    margin-top: 20px;
     margin-bottom: 30px;
     max-height: 410px !important;
-    min-height: 193px !important;
 }
 
 /* Footer */
 footer
 {
     display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    padding-top: 20px;
+    background-color: #F2F2F2;
+    padding-top: 25px;
     width: 100%;
     left:0;
     position:absolute;
-    padding-bottom: 15px;
-
+    padding-bottom: 25px;
 }
 
 footer p
 {
-    font-size: 1em;
-    font-weight: 500;
-    margin-left: 25px;
+    font-size: 0.8em;
+    font-weight:500;
 }
 
 footer h2
 {
     font-size: 1.2em;
-    font-weight: bold;
     margin-bottom: 20px;
-    margin-left: 25px;
 }
 
 #about
 {
-    margin-bottom: 30px;
+    width: 33%;
+    margin-left: 55px;
 }
 
 #hebergements
 {
-    margin-bottom: 30px;
+    width: 33%;
 }
 
 #assitance
 {
-    margin-bottom: 30px;
+    width: 33%;
 }
