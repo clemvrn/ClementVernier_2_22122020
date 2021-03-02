@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" media="all and (min-width: 1000px) and (max-width: 3000px)" href="css/style.css" />
-        <link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 999px)" href="css/style-iphone8.css" />
-       <!--<link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 768px)" href="css/style-iphone8.css" />-->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" media="screen and (min-width: 992px)" href="./css/style.css" type="text/css"/>
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="./css/style-tablette.css" type="text/css"/>
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/style-iphone8.css" type="text/css"/>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <!-- Police Raleway -->
@@ -33,26 +34,27 @@
                     </ul>
                 </nav>
             </header>
-            <section id="menu2">
+            <div id="menu2">
                 <nav id="nav2-iphone8">
                     <ul>
                         <li><a href="#HbMarseille" class="a-hebergements">Hébergements</a></li>
                         <li><a href="#ActiviteMarseille" class="a-activités">Activités</a></li>
                     </ul>
                 </nav>
-            </section>
+            </div>
             <section id="recherche">
-                <article>
-                <h1>Trouvez votre hébergement <br id="br-iphone8">pour des vacances de rêve</h1>
+                <div>
+                <h2>Trouvez votre hébergement <br id="br-iphone8">pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
                     <form>
                         <i class="fas fa-map-marker-alt" id="map-desktop"></i>
-                        <i class="fas fa-map-marker-alt fa-3x" id="map-iphone8"></i>
+                        <i class="fas fa-map-marker-alt fa-lg" id="map-iphone8"></i>
+                        <i class="fas fa-map-marker-alt fa-2x" id="map-tablette"></i>
                         <input class="input-field" type="text" placeholder="Marseille, France">
                         <button class="search" id="search-desktop">Rechercher</button>
-                        <button class="search" id="search-iphone8"> <i class="fas fa-search fa-3x"></i></button>
+                        <button class="search" id="search-iphone8"> <i class="fas fa-search fa-lg"></i></button>
                     </form>
-                </article>
+                </div>
             </section>
 
             <section id="filtre">
@@ -64,24 +66,25 @@
                     <li><i class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
                 <ul id="ul-filtre-iphone8">
-                    <li><i class="fas fa-money-bill-wave fa-lg"></i>Économique</li>
+                    <li class="money"><i class="fas fa-money-bill-wave fa-lg"></i>Économique</li>
                     <li><i class="fas fa-child fa-lg"></i>Familial</li>
                     <li><i class="fas fa-heart fa-lg"></i>Romantique</li>
-                    <li><i class="fas fa-dog fa-lg"></i>Animaux autorisés</li>
+                    <li class="dog"><i class="fas fa-dog fa-lg"></i>Animaux autorisés</li>
                 </ul>
             </section>
-            <section id="info">
-                    <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles <br id="br-iphone8">dans cette ville</p>
-            </section>
+            <div id="info">
+                    <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles <br id="br-iphone8-2">dans cette ville</p>
+            </div>
             
             <main>
             <section id="aside-iphone8">
-                <div id="hautaside">
+                <div id="hautaside-2">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line fa-lg" id="aside-icon-desktop"></i>
-                    <i class="fas fa-chart-line fa-lg fa-3x" id="aside-icon-iphone8"></i>
+                    <i class="fas fa-chart-line fa-lg fa-lg" id="aside-icon-iphone8"></i>
+                    <i class="fas fa-chart-line fa-lg fa-2x" id="aside-icon-tablette"></i>
                 </div>
-                <div id="articles-aside">
+                <div id="articles-aside-2">
                     <article>
                         <a href="#">
                             <img src="img/herbergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
@@ -95,14 +98,21 @@
                                     <i class="fas etoiles-bleu fa-star"></i>
                                     <i class="fas etoiles-bleu fa-star"></i>
                                     <i class="fas etoiles-bleu fa-star"></i>
-                                    <i class="fas etoiles-blanche fa-star"></i>
+                                    <i class="fas etoiles-bleu fa-star"></i>
                                 </div>
                                 <div class="etoiles" id="etoiles-iphone8">
-                                    <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                    <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                    <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                    <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                    <i class="fas etoiles-blanche fa-star fa-2x"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                </div>
+                                <div class="etoiles" id="etoiles-tablette">
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                    <i class="fas etoiles-bleu fa-star fa-lg"></i>
                                 </div>
                             </div>
                         </a>
@@ -115,7 +125,7 @@
                                         <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                         <p>Nuit à partir de 71<span class="prix-bold">€</span></p>
                                     </div>
-                                    <div class="etoiles"  id="etoiles-desktop2">
+                                    <div class="etoiles" id="etoiles-desktop2">
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
@@ -123,11 +133,18 @@
                                         <i class="fas etoiles-blanche fa-star"></i>
                                     </div>
                                     <div class="etoiles" id="etoiles-iphone8-2">
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-blanche fa-star fa-2x"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-blanche fa-star fa-lg"></i>
+                                    </div>
+                                    <div class="etoiles" id="etoiles-tablette-2">
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-blanche fa-star fa-lg"></i>
                                     </div>
                                 </div>
                             </a>
@@ -140,7 +157,7 @@
                                         <h3>Hôtel Tout bleu et Blanc</h3>
                                         <p>Nuit à partir de 68<span class="prix-bold">€</span></p>
                                     </div>
-                                    <div class="etoiles"   id="etoiles-desktop3">
+                                    <div class="etoiles" id="etoiles-desktop3">
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
@@ -148,11 +165,18 @@
                                         <i class="fas etoiles-blanche fa-star"></i>
                                     </div>
                                     <div class="etoiles" id="etoiles-iphone8-3">
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-bleu fa-star fa-2x"></i>
-                                        <i class="fas etoiles-blanche fa-star fa-2x"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-blanche fa-star fa-lg"></i>
+                                    </div>
+                                    <div class="etoiles" id="etoiles-tablette-3">
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-bleu fa-star fa-lg"></i>
+                                        <i class="fas etoiles-blanche fa-star fa-lg"></i>
                                     </div>
                                 </div>
                             </a>
@@ -162,7 +186,7 @@
 
             <!-- HEBERGEMENTS MARSEILLE -->
             <section>
-                <article id="HbMarseille">
+                <div id="HbMarseille">
                     <h2>Hébergements à Marseille</h2>
                     <div id="articles">
                         <article class="article-1">
@@ -251,7 +275,7 @@
                         </article>
                     </div>
                     <p><span class="seeMore">Afficher plus</span></p>
-                </article>
+                </div>
 
                 <!-- PLUS POPULAIRE -->
                 <aside id="aside-desktop">
@@ -273,7 +297,7 @@
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
                                         <i class="fas etoiles-bleu fa-star"></i>
-                                        <i class="fas etoiles-blanche fa-star"></i>
+                                        <i class="fas etoiles-bleu fa-star"></i>
                                     </div>
                                 </div>
                             </a>
@@ -342,6 +366,18 @@
                         </a>
                     </article>
                </div>
+                <article class="article-activite-2" id="article-activite-2-tablette">
+                    <a href="#">
+                        <img class="img-size-m"  src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                        <h3>Fort de Pomègues</h3>
+                    </a>
+                </article>
+                <article class="article-activite-3" id="article-activite-3-tablette">
+                    <a href="#">
+                        <img class="img-size-s" src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                        <h3>Iles du Frioul</h3>
+                    </a>
+                </article>
                     <article class="article-activite-4">
                         <a href="#">
                             <img class="img-size-h" src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
@@ -362,10 +398,21 @@
                         </a>
                     </article>
                 </div>
+                <article class="article-activite-5" id="article-activite-5-tablette">
+                    <a href="#">
+                        <img class="img-size-half" src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </a>
+                </article>
+                <article class="article-activite-6" id="article-activite-6-tablette">
+                    <a href="#">
+                        <img class="img-size-half" src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        <h3>Parc Longchamp</h3>
+                    </a>
+                </article>
                 </div>
             </section>
-            </main>
-            
+            </main>   
         </div>
 
             <footer>
