@@ -132,7 +132,7 @@ nav a
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
-    font-weight:500;
+    font-weight: 500;
 }
 
 nav a span
@@ -189,11 +189,11 @@ nav a:hover
 #recherche .input-field {
     padding: 15px;
     border: none;
+    color: black;
 }
 
 input::placeholder {
     font-weight:700;
-    color: black;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 1.1em;
 }
